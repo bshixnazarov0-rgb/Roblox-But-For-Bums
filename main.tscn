@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c1main"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1")
+
+[node name="World" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D"]
+
+[node name="Mesh" type="MeshInstance3D"]
+
+[node name="Collision" type="CollisionShape3D"]
+
+[node name="Player" type="CharacterBody3D" position=Vector3(0, 2, 8)
+
+[node name="Body" type="MeshInstance3D"]
+
+[node name="Collision" type="CollisionShape3D"]
+
+[node name="CameraPivot" type="Node3D" position=Vector3(0, 1.2, 0)
+
+[node name="Camera" type="Camera3D" position=Vector3(0, 1.5, 7)
+current=true
+
+[node name="Sun" type="DirectionalLight3D" position=Vector3(8, 12, 6)
+rotation_degrees=Vector3(-55, 35, 0)
+shadow_enabled=true
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Title" type="Label" position=Vector2(24, 18)
+text="Bum Worlds"
+
+[node name="Coins" type="Label" position=Vector2(24, 52)
+text="Coins: 0"
+
+[node name="Place" type="Label" position=Vector2(24, 86)
+text="Place: Forest"
+
+[node name="Hint" type="Label" position=Vector2(24, 120)
+text="Collect runes, then collect coins!"
+
+[node name="Joystick" type="Node2D" position=Vector2(150, 580)
+
+[node name="JoystickBase" type="Polygon2D"]
+
+[node name="JoystickKnob" type="Polygon2D"]
+
+[node name="LookZone" type="Control" anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+mouse_filter=0
+
+[node name="Shop" type="PanelContainer" position=Vector2(820, 40)
+
+[node name="ShopTitle" type="Label" text="SKINS"
+
+[node name="Classic" type="Button" text="Classic - 0"
+
+[node name="Mint" type="Button" text="Mint - 12"
+
+[node name="Gold" type="Button" text="Gold - 25"
